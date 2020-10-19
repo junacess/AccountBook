@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/total_assets"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:text="總資產：35000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/today_spend"
+        android:layout_width="287dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="21dp"
+        android:text="今日花費：1000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_assets" />
+
+
+    <RelativeLayout
+        android:id="@+id/out_start_account"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/barGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/today_spend">
+
+        <Button
+            android:id="@+id/start_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/barGreen"
+            android:enabled="false" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="96dp"
+                android:layout_height="28dp"
+                android:text="@string/start_account"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/document" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <DatePicker
+        android:layout_width="355dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/out_start_account" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
