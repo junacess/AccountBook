@@ -5,7 +5,11 @@
     <string name="start_account">開始記帳</string>
     <string name="bttom_home">主頁</string>
     <string name="bttom_book">帳本</string>
+        <string name="traffic">交通</string>
+        <string name="add">新增</string>
     <string name="bttom_account">記帳</string>
     <string name="bttom_analysis">分析</string>
     <string name="bttom_setting">設定</string>
+
+
 </resources>
