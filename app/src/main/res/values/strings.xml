@@ -2,13 +2,27 @@
     <string name="app_name">AccountBook</string>
     <string name="home">首頁</string>
     <string name="account_analysis">帳目分析</string>
-    <string name="start_account">開始記帳</string>
+    /*主頁*/
     <string name="bttom_home">主頁</string>
+    <string name="total_assets">總資產:</string>
+    <string name="start_account">開始記帳</string>
+    /*帳本*/
     <string name="bttom_book">帳本</string>
-        <string name="traffic">交通</string>
-        <string name="add">新增</string>
+    <string name="traffic">交通</string>
+    <string name="add">新增</string>
+    /*記帳*/
     <string name="bttom_account">記帳</string>
+    <string name="income">收入</string>
+    <string name="expenditure">支出</string>
+    <string name="date">日期:</string>
+    <string name="remarks">備註:</string>
+    <string name="item">項目:</string>
+    <string name="payFuntion">付費方式:</string>
+    <string name="money">金額:</string>
+    <string name="save">儲存</string>
+    /*分析*/
     <string name="bttom_analysis">分析</string>
+    /*設定*/
     <string name="bttom_setting">設定</string>
 
 

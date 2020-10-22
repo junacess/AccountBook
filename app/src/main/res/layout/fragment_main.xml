@@ -7,10 +7,10 @@
 
     <TextView
         android:id="@+id/total_assets"
-        android:layout_width="287dp"
+        android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:layout_marginTop="48dp"
-        android:text="總資產：35000"
+        android:text="@string/total_assets"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
