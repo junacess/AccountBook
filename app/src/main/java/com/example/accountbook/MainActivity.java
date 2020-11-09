@@ -1,20 +1,15 @@
 package com.example.accountbook;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-
-import com.example.accountbook.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_account);
+        setContentView(R.layout.fragment_account_pay);
 
 //        Fragment fragment = new MainFragment();
 //        FragmentManager manager = getSupportFragmentManager();
