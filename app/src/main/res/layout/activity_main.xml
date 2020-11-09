@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/creamy＿white">
+    android:background="@color/creamy＿white"
+    >
 
 
     <View
@@ -27,97 +28,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/total_assets"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/total_assets"
-        android:textSize="40sp"
-        android:textStyle="bold"
+    <FrameLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBar" />
-
-    <TextView
-        android:id="@+id/today_spend"
-        android:layout_width="287dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="21dp"
-        android:text="今日花費：1000"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total_assets" />
-
-
-    <RelativeLayout
-        android:id="@+id/out_start_account"
-        android:layout_width="244dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="35dp"
-        android:background="@color/barGreen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/today_spend">
-
-        <Button
-            android:id="@+id/start_account"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/barGreen"
-            android:enabled="false" />
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="60dp">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="96dp"
-                android:layout_height="28dp"
-                android:text="@string/start_account"
-                android:textColor="@color/white"
-                android:textSize="22sp" />
-
-            <ImageView
-                android:layout_width="33dp"
-                android:layout_height="33dp"
-                android:layout_marginStart="30dp"
-                android:src="@drawable/document" />
-
-
-        </LinearLayout>
-    </RelativeLayout>
-
-    <DatePicker
-        android:layout_width="355dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/out_start_account" />
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
 
 
     <LinearLayout
         android:id="@+id/bottom_home"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@color/barGreen"
+        android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toStartOf="@id/bottom_book"
-        app:layout_constraintStart_toStartOf="parent"
-
-        >
-
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="45dp"
@@ -133,16 +64,15 @@
             android:text="@string/bttom_home"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_book"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
@@ -163,16 +93,15 @@
             android:text="@string/bttom_book"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_account"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
@@ -193,16 +122,15 @@
             android:text="@string/bttom_account"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_analysis"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
@@ -223,16 +151,15 @@
             android:text="@string/bttom_analysis"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_setting"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:background="@color/white"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
@@ -253,7 +180,7 @@
             android:text="@string/bttom_setting"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

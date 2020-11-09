@@ -3,38 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/creamy＿white">
-
-
-    <View
-        android:id="@+id/topBar"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
-        android:background="@color/barGreen"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/home"
-        android:layout_width="53dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/bttom_account"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@id/incomeView"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBar">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <Button
             android:id="@+id/income"
@@ -49,9 +28,10 @@
         <Button
             android:id="@+id/expenditure"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_round_button"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
             android:text="@string/expenditure"
             android:textSize="27sp" />
 
@@ -157,7 +137,7 @@
         android:layout_width="110dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
-        android:background="@color/barGreen"
+        android:background="@drawable/bg_round_button"
         android:text="@string/save"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
