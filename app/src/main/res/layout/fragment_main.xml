@@ -34,7 +34,7 @@
         android:layout_height="45dp"
         android:layout_centerVertical="true"
         android:layout_marginTop="35dp"
-        android:background="@color/barGreen"
+        android:background="@drawable/bg_round_button_nomel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/today_spend">
